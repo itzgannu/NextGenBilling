@@ -5,4 +5,9 @@
     <dimen name="text_16">16sp</dimen>
     <dimen name="zero_dp">0dp</dimen>
     <dimen name="text_24">24sp</dimen>
+    <dimen name="large_50">50dp</dimen>
+    <dimen name="mediumText_28">28sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="one_dp">1dp</dimen>
 </resources>

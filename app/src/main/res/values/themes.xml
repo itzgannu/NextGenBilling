@@ -12,5 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <!-- Font for the theme-->
+        <item name="android:fontFamily">@font/roboto_mono</item>
     </style>
 </resources>

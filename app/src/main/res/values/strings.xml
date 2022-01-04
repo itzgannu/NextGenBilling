@@ -36,5 +36,16 @@
     <string name="stores">STORES</string>
     <string name="more">MORE</string>
     <string name="loading">Loading</string>
+    <string name="logged_in_successfully">LOGGED IN SUCCESSFULLY</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="update_password">UPDATE PASSWORD</string>
+    <string name="add_employee">ADD EMPLOYEE</string>
+    <string name="branch_name">BRANCH NAME</string>
+    <string name="branch_location">BRANCH LOCATION</string>
+    <string name="cashier">CASHIER</string>
+    <string name="staff">STAFF</string>
+    <string name="add">ADD</string>
+    <string name="change">CHANGE</string>
+    <string name="add_branch">ADD BRANCH</string>
 
 </resources>

@@ -3,12 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/drawable/n_stores.xml" value="0.3828125" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/drawable/nav_more.xml" value="0.3828125" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/drawable/nav_stores.xml" value="0.3828125" />
         <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_authentication.xml" value="0.23596014492753623" />
-        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_initialization.xml" value="0.23596014492753623" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_branch_addition.xml" value="0.36096014492753625" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_home_more.xml" value="0.33" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_home_stores.xml" value="0.23596014492753623" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_initialization.xml" value="0.33" />
         <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_initializing.xml" value="0.23596014492753623" />
         <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_main.xml" value="0.23596014492753623" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_passcode_updation.xml" value="0.36096014492753625" />
         <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_registration.xml" value="0.23596014492753623" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_sign_out.xml" value="0.36096014492753625" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/activity_staff_addition.xml" value="0.22" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/card_stores.xml" value="0.25" />
         <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/layout/progress_bar.xml" value="0.23596014492753623" />
+        <entry key="..\:/Android/Projects/Android_Store/NextGenBilling/app/src/main/res/menu/nav_onboard.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>
