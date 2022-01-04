@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "619993057599",
+    "firebase_url": "https://nextgen-billing-default-rtdb.firebaseio.com",
+    "project_id": "nextgen-billing",
+    "storage_bucket": "nextgen-billing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619993057599:android:3c2791afe5f9d579a42b8a",
+        "android_client_info": {
+          "package_name": "mu.psi.nextgen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619993057599-6akh3nh584ranha8sh859cbhfu5onu9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOQTkfRn0bxGXfBQ8sE8xvQw60UEBiQ4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619993057599-6akh3nh584ranha8sh859cbhfu5onu9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

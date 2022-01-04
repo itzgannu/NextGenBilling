@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">NextGenBilling</string>
+
+    <!-- XML recursive strings -->
+    <string name="image_content_description">THIS IS AN IMAGE</string>
+
+    <!-- Authentication Screen -->
+    <string name="email_id">EMAIL ID</string>
+    <string name="password">PASSWORD</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">NEW USER? SIGN UP!</string>
+    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+
+    <!-- Registration Screen -->
+    <string name="welcome">WELCOME</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="company_name">COMPANY NAME</string>
+    <string name="disclaimer">DISCLAIMER</string>
+    <string name="disclaimer_text">1) YOU CANNOT CHANGE COMPANY NAME LATER ON!\n\n2)ONLY SIGN UP IF YOU WANT TO REGISTER YOUR STORE WITH US. \n\nIF YOU ARE AN EMPLOYEE, ASK YOUR EMPLOYER TO SIGN UP FOR YOU!</string>
+    <string name="register">REGISTER</string>
+
+    <!-- Registration JAVA -->
+    <string name="registered">COMPANY REGISTERED WITH US</string>
+    <string name="success">SUCCESS</string>
+    <string name="okay">OKAY</string>
+
+    <!-- Error Messages -->
+    <string name="error_field_empty">FIELD IS EMPTY</string>
+    <string name="error_password_minimum_six">PASSWORD NEEDS TO BE MINIMUM 6 CHARACTERS</string>
+    <string name="error_invalid_email">ENTER A VALID EMAIL ID</string>
+    <string name="error_name_minimum_two">FULL NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
+    <string name="error_company_minimum_two">COMPANY NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
+
+    <!-- Navigation / Fragments -->
+    <string name="stores">STORES</string>
+    <string name="more">MORE</string>
+    <string name="loading">Loading</string>
+
+</resources>

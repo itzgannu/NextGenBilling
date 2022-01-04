@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/registration_welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="@dimen/base"
+        android:text="@string/welcome"
+        android:textSize="@dimen/text_24"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/registration_linear_layout_fields"
+        android:layout_below="@+id/registration_welcome_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="@dimen/medium_20"
+        android:padding="@dimen/medium_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registration_full_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:textColor="@color/black"
+                app:hintTextColor="@color/biscuit"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registration_email_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_id"
+                app:hintTextColor="@color/biscuit"
+                android:textColor="@color/black"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registration_passcode"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                app:hintTextColor="@color/biscuit"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registration_company_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/company_name"
+                android:textColor="@color/black"
+                app:hintTextColor="@color/biscuit"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/registration_register_button"
+            android:layout_marginTop="@dimen/medium_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/register"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registration_linear_layout_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registration_linear_layout_fields"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/base"
+        android:padding="@dimen/base">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_corner"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/registration_disclaimer_text"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/disclaimer"
+                android:textAlignment="center"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/registration_disclaimer"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:scrollbars="vertical"
+                android:text="@string/disclaimer_text"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

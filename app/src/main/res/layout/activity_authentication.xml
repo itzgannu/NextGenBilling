@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_screen"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication">
+
+    <ImageView
+        android:id="@+id/authentication_screen_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="@dimen/medium_20"
+        android:alpha="0.1"
+        android:contentDescription="@string/image_content_description"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/authentication_screen_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authentication_screen_logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="@dimen/base"
+        android:text="@string/already_have_an_account"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/authentication_screen_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authentication_screen_title_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="@dimen/base"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_20">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/authentication_screen_email_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_id"
+                android:textColor="@color/black"
+                app:hintTextColor="@color/biscuit"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/authentication_screen_passcode"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle"
+            android:layout_marginTop="@dimen/medium_20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                app:hintTextColor="@color/biscuit"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/authentication_screen_sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_20"
+            android:text="@string/sign_in"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/authentication_screen_forgot_password_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base"
+            android:text="@string/forgot_password"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/authentication_screen_sign_up_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authentication_screen_linear_layout"
+        android:layout_centerInParent="true"
+        android:text="@string/sign_up"
+        android:textColor="@color/dark_green" />
+
+</RelativeLayout>
