@@ -1,4 +1,4 @@
-package mu.psi.nextgen.model;
+package mu.psi.nextgen.viewModel;
 
 import android.app.Application;
 

@@ -113,14 +113,14 @@ public class Authentication extends AppCompatActivity implements View.OnClickLis
     }
 
     void redirecting_to_place_holder() {
-        Intent splashIntent = new Intent(Authentication.this, Initializing.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(splashIntent);
+        Intent placeHolder = new Intent(Authentication.this, HomeStores.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(placeHolder);
         finish();
     }
 
     void onClickSignUp() {
-        Intent splashIntent = new Intent(Authentication.this, Registration.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(splashIntent);
+        Intent signUpScreen = new Intent(Authentication.this, Registration.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(signUpScreen);
         finish();
     }
 

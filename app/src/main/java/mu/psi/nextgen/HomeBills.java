@@ -4,17 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import mu.psi.nextgen.databinding.ActivityStaffAdditionBinding;
+import mu.psi.nextgen.databinding.ActivityHomeBillsBinding;
 
-public class StaffAddition extends AppCompatActivity {
+public class HomeBills extends AppCompatActivity {
 
-    ActivityStaffAdditionBinding binding;
+    ActivityHomeBillsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.binding = ActivityStaffAdditionBinding.inflate(getLayoutInflater());
+        this.binding = ActivityHomeBillsBinding.inflate(getLayoutInflater());
         setContentView(this.binding.getRoot());
     }
 }

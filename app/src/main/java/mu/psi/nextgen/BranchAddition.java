@@ -4,11 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import mu.psi.nextgen.databinding.ActivityBranchAdditionBinding;
+
 public class BranchAddition extends AppCompatActivity {
+
+    ActivityBranchAdditionBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_branch_addition);
+        this.binding = ActivityBranchAdditionBinding.inflate(getLayoutInflater());
+        setContentView(this.binding.getRoot());
     }
 }

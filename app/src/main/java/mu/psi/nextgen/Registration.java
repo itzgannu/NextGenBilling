@@ -20,7 +20,7 @@ import java.util.Objects;
 
 import mu.psi.nextgen.databinding.ActivityRegistrationBinding;
 import mu.psi.nextgen.models.company.Admin;
-import mu.psi.nextgen.model.CompanyVM;
+import mu.psi.nextgen.viewModel.CompanyVM;
 
 public class Registration extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
 
@@ -62,7 +62,7 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
         FirebaseUser currentUser = auth.getCurrentUser();
         if(currentUser != null) {
             //some one already logged in
-            Intent splashIntent = new Intent(Registration.this, Initializing.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            Intent splashIntent = new Intent(Registration.this, HomeStores.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(splashIntent);
             finish();
         }
