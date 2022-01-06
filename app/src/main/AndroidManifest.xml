@@ -10,6 +10,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NextGenBilling">
         <activity
+            android:name=".ShareBill"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBill"
+            android:exported="false" />
+        <activity
+            android:name=".OrderFailed"
+            android:exported="false" />
+        <activity
+            android:name=".OrderPlaced"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceOrder"
+            android:exported="false" />
+        <activity
+            android:name=".OrderCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".OrderReview"
+            android:exported="false" />
+        <activity
+            android:name=".OrderProduct"
+            android:exported="false" />
+        <activity
+            android:name=".OrderAisle"
+            android:exported="false" />
+        <activity
+            android:name=".StockUpdation"
+            android:exported="false" />
+        <activity
+            android:name=".StockAddition"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".HomeExtras"
+            android:exported="false" />
+        <activity
+            android:name=".HomeStocks"
+            android:exported="false" />
+        <activity
             android:name=".HomeBills"
             android:exported="false" />
         <activity

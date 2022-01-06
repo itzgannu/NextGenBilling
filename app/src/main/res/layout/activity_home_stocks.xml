@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeBills">
+    tools:context=".HomeStocks">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/home_bills_toolBarLayout"
+        android:id="@+id/home_stocks_toolBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -18,30 +18,30 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/home_bills_toolbar"
+            android:id="@+id/home_stocks_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
 
             <TextView
-                android:id="@+id/home_bills_title"
+                android:id="@+id/home_stocks_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginStart="@dimen/large_50"
-                android:text="@string/branch_name"
+                android:text="@string/stocks"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_16"
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/home_bills_cart"
+                android:id="@+id/home_stocks_add"
                 android:layout_width="@dimen/large_50"
                 android:layout_height="match_parent"
                 android:padding="@dimen/base"
                 android:layout_gravity="end"
                 android:layout_marginEnd="@dimen/medium_20"
                 android:contentDescription="@string/image_content_description"
-                android:src="@drawable/icon_cart" />
+                android:src="@drawable/icon_add" />
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -50,7 +50,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/home_bills_toolBarLayout"
+        android:layout_below="@+id/home_stocks_toolBarLayout"
         android:layout_above="@+id/individual_bottom_bar"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -64,14 +64,14 @@
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/home_bills_search_text_layout"
+                android:id="@+id/home_stocks_search_text_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/search">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/home_bills_search_text"
+                    android:id="@+id/home_stocks_search_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/icon_search"
@@ -82,7 +82,7 @@
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/home_bills_recycler_view"
+            android:id="@+id/home_stocks_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:layout_marginBottom="@dimen/base"

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">NextGenBilling</string>
+    <string name="app_version">1.0</string>
+    <string name="app_company">Mu Psi Corp</string>
 
     <!-- XML recursive strings -->
     <string name="image_content_description">THIS IS AN IMAGE</string>
@@ -47,5 +49,14 @@
     <string name="add">ADD</string>
     <string name="change">CHANGE</string>
     <string name="add_branch">ADD BRANCH</string>
+    <string name="home">HOME</string>
+    <string name="stocks">STOCKS</string>
+    <string name="extras">EXTRAS</string>
+    <string name="search">SEARCH</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="app_info">TO DO APP INFO</string>
+    <string name="write_to_us">WRITE TO US</string>
+    <string name="call_us">CALL US</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
 
 </resources>

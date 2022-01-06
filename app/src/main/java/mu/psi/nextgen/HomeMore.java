@@ -36,6 +36,7 @@ public class HomeMore extends AppCompatActivity implements View.OnClickListener,
         this.binding.homeMoreAddEmployeeButton.setOnClickListener(this);
         this.binding.homeMoreAddBranchButton.setOnClickListener(this);
         this.binding.homeMoreUpdatePasswordButton.setOnClickListener(this);
+        this.binding.homeMoreAboutUsButton.setOnClickListener(this);
         this.binding.homeMoreSignOutButton.setOnClickListener(this);
     }
 
@@ -55,6 +56,8 @@ public class HomeMore extends AppCompatActivity implements View.OnClickListener,
             Intent goToPasscodeUpdate = new Intent(HomeMore.this, PasscodeUpdation.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(goToPasscodeUpdate);
             finish();
+        } else if(id == R.id.home_more_about_us_button) {
+
         } else if(id == R.id.home_more_sign_out_button) {
             auth.signOut();
             Intent goToAuth = new Intent(HomeMore.this, Authentication.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
