@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/zero_dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/base"
+        android:gravity="center_vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/one"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="@dimen/large_100"
+            android:layout_height="@dimen/large_100"
+            android:layout_marginStart="@dimen/base"
+            android:padding="@dimen/base"
+            android:src="@drawable/basket"
+            android:contentDescription="@string/image_content_description"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:layout_marginStart="@dimen/base"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_dp"
+                android:layout_weight="40"
+                android:text="@string/product_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_dp"
+                android:layout_weight="60"
+                android:layout_marginTop="@dimen/base"
+                android:text="@string/pack"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_12"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_marginStart="@dimen/base"
+            android:text="@string/price"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

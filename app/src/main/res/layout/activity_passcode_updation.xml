@@ -27,7 +27,7 @@
                 android:layout_height="match_parent"
                 android:padding="@dimen/base"
                 android:contentDescription="@string/image_content_description"
-                android:src="@drawable/close" />
+                android:src="@drawable/icon_close" />
 
             <TextView
                 android:id="@+id/passcode_title"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/update_password"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/text_16"
                 android:textStyle="bold" />
 

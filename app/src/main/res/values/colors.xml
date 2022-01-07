@@ -11,6 +11,7 @@
     <color name="transparent">#00000000</color>
     <color name="grass_green">#7ED957</color>
     <color name="dark_green">#006400</color>
+    <color name="teal_blue">#058575</color>
     <color name="red">#DD2C00</color>
     <color name="biscuit">#757575</color>
 </resources>

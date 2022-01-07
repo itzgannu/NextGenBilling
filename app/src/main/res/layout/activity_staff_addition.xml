@@ -23,11 +23,11 @@
 
             <ImageView
                 android:id="@+id/staff_addition_close"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/medium_20"
+                android:layout_width="@dimen/large_50"
+                android:layout_height="match_parent"
+                android:padding="@dimen/base"
                 android:contentDescription="@string/image_content_description"
-                android:src="@drawable/close" />
+                android:src="@drawable/icon_close" />
 
             <TextView
                 android:id="@+id/staff_addition_title"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/add_employee"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/text_16"
                 android:textStyle="bold" />
 

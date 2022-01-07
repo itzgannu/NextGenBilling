@@ -29,13 +29,83 @@
                 android:layout_gravity="start"
                 android:layout_marginStart="@dimen/large_50"
                 android:text="@string/extras"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/text_16"
                 android:textStyle="bold" />
 
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_extras_toolBarLayout"
+        android:layout_above="@id/individual_bottom_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_20">
+
+        <LinearLayout
+            android:id="@+id/home_extras_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base"
+            android:gravity="center"
+            android:background="@drawable/border_corner"
+            android:layout_marginTop="@dimen/text_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:text="@string/dashboard"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_20"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:src="@drawable/icon_arrow"
+                android:contentDescription="@string/image_content_description"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_extras_sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base"
+            android:gravity="center"
+            android:background="@drawable/border_corner"
+            android:layout_marginTop="@dimen/text_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:text="@string/sign_out"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_20"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:src="@drawable/icon_arrow"
+                android:contentDescription="@string/image_content_description"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/individual_bottom_bar"

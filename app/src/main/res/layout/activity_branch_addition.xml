@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,11 +24,11 @@
 
             <ImageView
                 android:id="@+id/branch_addition_close"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_width="@dimen/large_50"
+                android:layout_height="match_parent"
+                android:padding="@dimen/base"
                 android:contentDescription="@string/image_content_description"
-                android:src="@drawable/close" />
+                android:src="@drawable/icon_close" />
 
             <TextView
                 android:id="@+id/branch_addition_title"
@@ -35,8 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/add_branch"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
                 android:textStyle="bold" />
 
         </androidx.appcompat.widget.Toolbar>

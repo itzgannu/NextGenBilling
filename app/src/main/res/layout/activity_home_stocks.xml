@@ -29,7 +29,7 @@
                 android:layout_gravity="start"
                 android:layout_marginStart="@dimen/large_50"
                 android:text="@string/stocks"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/text_16"
                 android:textStyle="bold" />
 
@@ -75,7 +75,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/icon_search"
-                    android:drawablePadding="@dimen/base"/>
+                    android:drawablePadding="@dimen/base"
+                    tools:ignore="TextContrastCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

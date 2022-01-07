@@ -1,9 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ViewBill">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view_bill_toolBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/view_bill_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/view_bill_close"
+                android:layout_width="@dimen/large_50"
+                android:layout_height="match_parent"
+                android:padding="@dimen/base"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/icon_close" />
+
+            <TextView
+                android:id="@+id/view_bill_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bill_number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_bill_toolBarLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_20">
+
+            <TextView
+                android:id="@+id/view_bill_customer_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base"
+                android:text="@string/customer_details"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginBottom="@dimen/base"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/view_bill_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/view_bill_customer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base"
+                android:text="@string/customer_email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/view_bill_order_timing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginBottom="@dimen/base"
+                android:text="@string/order_date_and_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginBottom="@dimen/base"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/view_bill_order_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base"
+                android:text="@string/total"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_bill_order_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base"
+                android:text="@string/bought_below"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/view_bill_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginBottom="@dimen/base" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginBottom="@dimen/base"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/view_bill_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base"
+                android:text="@string/bill_end"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_12"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
