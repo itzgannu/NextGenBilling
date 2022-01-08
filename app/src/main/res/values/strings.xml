@@ -6,6 +6,32 @@
     <!-- XML recursive strings -->
     <string name="image_content_description">THIS IS AN IMAGE</string>
 
+    <!-- Navigation / Fragments -->
+    <string name="stores">STORES</string>
+    <string name="more">MORE</string>
+    <string name="home">HOME</string>
+    <string name="stocks">STOCKS</string>
+    <string name="extras">EXTRAS</string>
+
+    <!-- Progress Bar XML -->
+    <string name="loading">Loading</string>
+
+    <!-- Home Store Screen -->
+    <string name="add_branch_to_view_here">ADD BRANCH TO VIEW HERE</string>
+
+    <!-- Home More Screen -->
+    <string name="add_employee">ADD EMPLOYEE</string>
+    <string name="add_branch">ADD BRANCH</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="update_password">UPDATE PASSWORD</string>
+    <string name="sign_out">SIGN OUT</string>
+
+    <!-- Home Bills Screen -->
+    <string name="search">SEARCH</string>
+
+    <!-- Home Extras Screen -->
+    <string name="dashboard">DASHBOARD</string>
+
     <!-- Authentication Screen -->
     <string name="email_id">EMAIL ID</string>
     <string name="password">PASSWORD</string>
@@ -22,35 +48,6 @@
     <string name="disclaimer_text">1) YOU CANNOT CHANGE COMPANY NAME LATER ON!\n\n2)ONLY SIGN UP IF YOU WANT TO REGISTER YOUR STORE WITH US. \n\nIF YOU ARE AN EMPLOYEE, ASK YOUR EMPLOYER TO SIGN UP FOR YOU!</string>
     <string name="register">REGISTER</string>
 
-    <!-- Registration JAVA -->
-    <string name="registered">COMPANY REGISTERED WITH US</string>
-    <string name="success">SUCCESS</string>
-    <string name="okay">OKAY</string>
-
-    <!-- Error Messages -->
-    <string name="error_field_empty">FIELD IS EMPTY</string>
-    <string name="error_password_minimum_six">PASSWORD NEEDS TO BE MINIMUM 6 CHARACTERS</string>
-    <string name="error_invalid_email">ENTER A VALID EMAIL ID</string>
-    <string name="error_name_minimum_two">FULL NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
-    <string name="error_company_minimum_two">COMPANY NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
-
-    <!-- Navigation / Fragments -->
-    <string name="stores">STORES</string>
-    <string name="more">MORE</string>
-    <string name="home">HOME</string>
-    <string name="stocks">STOCKS</string>
-    <string name="extras">EXTRAS</string>
-
-    <string name="loading">Loading</string>
-    <string name="logged_in_successfully">LOGGED IN SUCCESSFULLY</string>
-
-    <!-- More Screen -->
-    <string name="add_employee">ADD EMPLOYEE</string>
-    <string name="add_branch">ADD BRANCH</string>
-    <string name="about_us">ABOUT US</string>
-    <string name="update_password">UPDATE PASSWORD</string>
-    <string name="sign_out">SIGN OUT</string>
-
     <!-- Add Branch Screen -->
     <string name="branch_name">BRANCH NAME</string>
     <string name="branch_location">BRANCH LOCATION</string>
@@ -63,19 +60,22 @@
     <!-- Update Password Screen -->
     <string name="change">CHANGE</string>
 
-    <!-- Home Bills Screen -->
-    <string name="search">SEARCH</string>
-
     <!-- About US Screen -->
     <string name="app_info">TO DO APP INFO</string>
     <string name="write_to_us">WRITE TO US</string>
     <string name="call_us">CALL US</string>
     <string name="privacy_policy">PRIVACY POLICY</string>
 
+    <!-- View Bill Screen -->
+    <string name="bill_number">BILL NUMBER</string>
+    <string name="order_date_and_time">ORDER TIME STAMP</string>
+    <string name="bought_below">BOUGHT BELOW ITEMS</string>
+    <string name="bill_end">END OF BILL</string>
 
-    <string name="product_name">PRODUCT NAME</string>
-    <string name="order_review">ORDER REVIEW</string>
-    <string name="share_bill">SHARE BILL</string>
+    <!-- Staff Addition Screen -->
+    <string name="staff_disclaimer">YOU WILL BE LOGGED OUT AFTER CREATING EMPLOYEE</string>
+
+    <!-- Stock Addition Screen -->
     <string name="stock_addition">ADD STOCK</string>
     <string name="name">NAME</string>
     <string name="description">DESCRIPTION</string>
@@ -83,28 +83,64 @@
     <string name="price">PRICE</string>
     <string name="in_stock">IN STOCK</string>
     <string name="choose">CHOOSE</string>
-    <string name="placing_an_order">PLACING AN ORDER</string>
-    <string name="kindly_wait">KINDLY WAIT!</string>
-    <string name="total">TOTAL</string>
+
+    <!-- Passcode Update Screen -->
+    <string name="failure">FAILED</string>
+    <string name="updatedPassword">UPDATED PASSWORD</string>
+    <string name="notUpdatedPassword">NOT ABLE TO PASSWORD, TRY AGAIN LATER!</string>
+
+    <!-- Stock Update Screen -->
+    <string name="product_name">PRODUCT NAME</string>
     <string name="one">1</string>
     <string name="add_to_cart">ADD TO CART</string>
-    <string name="share">SHARE</string>
     <string name="update">UPDATE</string>
     <string name="delete">DELETE</string>
-    <string name="bill_number">BILL NUMBER</string>
+
+    <!-- Order Aisle Screen -->
+    <string name="aisle_name">ITEMS IN STOCK</string>
+
+    <!-- Order Review Screen -->
+    <string name="order_review">ORDER REVIEW</string>
+    <string name="total">TOTAL</string>
+
+    <!-- Order Customer Screen -->
+    <string name="customer_details">CUSTOMER DETAILS</string>
     <string name="customer_name">NAME</string>
     <string name="customer_email">EMAIL ID</string>
-    <string name="order_date_and_time">ORDER TIME STAMP</string>
-    <string name="bought_below">BOUGHT BELOW ITEMS</string>
-    <string name="bill_end">END OF BILL</string>
-    <string name="customer_details">CUSTOMER DETAILS</string>
-    <string name="dashboard">DASHBOARD</string>
-    <string name="aisle_name">ITEMS IN STOCK</string>
-    <string name="failed">FAILED</string>
-    <string name="placed">ORDER PLACED</string>
     <string name="order">ORDER</string>
+
+    <!-- Place Order Screen -->
+    <string name="placing_an_order">PLACING AN ORDER</string>
+    <string name="kindly_wait">KINDLY WAIT!</string>
+
+    <!-- Order Failed Screen -->
+    <string name="failed">FAILED</string>
     <string name="order_failed_try_again_later">ORDER FAILED, TRY AGAIN LATER</string>
+
+    <!-- Order Placed Screen -->
+    <string name="placed">SUCCESS</string>
     <string name="order_placed_successfully">ORDER PLACED SUCCESSFULLY</string>
     <string name="order_number">ORDER NUMBER</string>
+
+    <!-- Share Bill Screen -->
+    <string name="share_bill">SHARE BILL</string>
+    <string name="share">SHARE</string>
+
+    <!-- Registration JAVA -->
+    <string name="registered">COMPANY REGISTERED WITH US</string>
+    <string name="success">SUCCESS</string>
+    <string name="okay">OKAY</string>
+
+    <!-- LocalData Java -->
+    <string name="preferenceName">MuPsiBilling</string>
+    <string name="userRole">UserRole</string>
+
+    <!-- Error Messages -->
+    <string name="error_field_empty">FIELD IS EMPTY</string>
+    <string name="error_password_minimum_six">PASSWORD NEEDS TO BE MINIMUM 6 CHARACTERS</string>
+    <string name="error_invalid_email">ENTER A VALID EMAIL ID</string>
+    <string name="error_name_minimum_two">FULL NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
+    <string name="error_company_minimum_two">COMPANY NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
+    <string name="error_field_minimum_three">FIELDS NEEDS TO BE MINIMUM 3 CHARACTERS</string>
 
 </resources>

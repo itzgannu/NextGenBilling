@@ -15,7 +15,6 @@ import com.google.android.material.card.MaterialCardView;
 import java.util.List;
 
 import mu.psi.nextgen.HomeBills;
-import mu.psi.nextgen.HomeStores;
 import mu.psi.nextgen.R;
 import mu.psi.nextgen.models.company.Branch;
 
@@ -65,6 +64,7 @@ public class Branches extends RecyclerView.Adapter<Branches.MyViewHolder>{
         TextView branchNameTV, branchLocationTV;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            cardView = itemView.findViewById(R.id.card_stores);
             branchNameTV = itemView.findViewById(R.id.card_stores_branch_name);
             branchLocationTV = itemView.findViewById(R.id.card_stores_branch_location);
         }

@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/staff_addition"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StaffAddition">
@@ -44,6 +45,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
+        android:id="@+id/staff_addition_fields"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -134,6 +136,34 @@
             android:text="@string/add"
             android:textSize="@dimen/text_20"
             android:layout_marginTop="@dimen/medium_20"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_20"
+            android:background="@drawable/border_corner"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="@dimen/small_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/disclaimer"
+                android:textAlignment="center"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:layout_width="@dimen/small_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:layout_marginStart="@dimen/base"
+                android:scrollbars="vertical"
+                android:text="@string/staff_disclaimer"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

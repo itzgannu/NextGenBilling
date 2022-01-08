@@ -77,14 +77,14 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:text="@string/price"
                 android:textColor="@color/black" />
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:text="@string/price"
@@ -100,14 +100,14 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:text="@string/pack"
                 android:textColor="@color/black" />
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:text="@string/pack"
@@ -123,14 +123,14 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:text="@string/description"
                 android:textColor="@color/black" />
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:text="@string/description"

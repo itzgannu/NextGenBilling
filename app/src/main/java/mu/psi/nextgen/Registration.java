@@ -19,7 +19,6 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import java.util.Objects;
 
 import mu.psi.nextgen.databinding.ActivityRegistrationBinding;
-import mu.psi.nextgen.models.company.Admin;
 import mu.psi.nextgen.viewModel.CompanyVM;
 
 public class Registration extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
@@ -103,14 +102,13 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
             String email = Objects.requireNonNull(this.binding.registrationEmailId.getEditText()).getText().toString();
             String code = Objects.requireNonNull(this.binding.registrationPasscode.getEditText()).getText().toString();
             String company_name = Objects.requireNonNull(this.binding.registrationCompanyName.getEditText()).getText().toString();
-            Admin admin = new Admin(email,full_name,company_name);
+            String name = company_name+"/"+"admin"+"/"+full_name;
 
             auth.createUserWithEmailAndPassword(email, code)
                     .addOnCompleteListener(this, task -> {
                         if(task.isSuccessful()) {
                             progress_bar(false);
-                            companyVM.writeAdminToCFS(admin);
-                            informing_user(company_name);
+                            informing_user(name);
                         } else {
                             progress_bar(false);
                         }
@@ -118,14 +116,16 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
                     .addOnFailureListener(this, e -> progress_bar(false))
                     .addOnCanceledListener(this, () -> progress_bar(false));
             clearTextFields();
+        } else {
+            progress_bar(false);
         }
     }
 
-    void setCompanyName(String company_name) {
+    void setCompanyName(String name) {
         if(auth.getCurrentUser() != null) {
             UserProfileChangeRequest createCompany =
                     new UserProfileChangeRequest.Builder()
-                            .setDisplayName(company_name)
+                            .setDisplayName(name)
                             .build();
             auth.getCurrentUser().updateProfile(createCompany);
         }

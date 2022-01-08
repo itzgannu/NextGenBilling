@@ -31,7 +31,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="80"
                 android:text="@string/add_employee"
@@ -40,7 +40,7 @@
                 android:textColor="@color/black"/>
 
             <ImageView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="20"
                 android:src="@drawable/icon_arrow"
@@ -59,7 +59,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="80"
                 android:text="@string/add_branch"
@@ -68,7 +68,7 @@
                 android:textColor="@color/black"/>
 
             <ImageView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="20"
                 android:src="@drawable/icon_arrow"
@@ -87,7 +87,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="80"
                 android:text="@string/update_password"
@@ -96,7 +96,7 @@
                 android:textColor="@color/black"/>
 
             <ImageView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="20"
                 android:src="@drawable/icon_arrow"
@@ -115,7 +115,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="80"
                 android:text="@string/about_us"
@@ -124,7 +124,7 @@
                 android:textColor="@color/black"/>
 
             <ImageView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="20"
                 android:src="@drawable/icon_arrow"
@@ -143,7 +143,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="80"
                 android:text="@string/sign_out"
@@ -152,7 +152,7 @@
                 android:textColor="@color/black"/>
 
             <ImageView
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="20"
                 android:src="@drawable/icon_arrow"
