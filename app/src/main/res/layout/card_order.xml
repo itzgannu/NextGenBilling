@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="@dimen/zero_dp"
+    app:cardElevation="@dimen/small_0"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,7 +14,7 @@
         android:layout_gravity="center">
 
         <TextView
-            android:layout_width="@dimen/zero_dp"
+            android:layout_width="@dimen/small_0"
             android:layout_height="wrap_content"
             android:layout_weight="10"
             android:text="@string/one"
@@ -31,7 +31,7 @@
             android:contentDescription="@string/image_content_description"/>
 
         <LinearLayout
-            android:layout_width="@dimen/zero_dp"
+            android:layout_width="@dimen/small_0"
             android:layout_height="match_parent"
             android:layout_weight="40"
             android:layout_marginStart="@dimen/base"
@@ -39,16 +39,14 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/zero_dp"
-                android:layout_weight="40"
+                android:layout_height="wrap_content"
                 android:text="@string/product_name"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_16"/>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/zero_dp"
-                android:layout_weight="60"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/base"
                 android:text="@string/pack"
                 android:textColor="@color/black"
@@ -57,7 +55,7 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="@dimen/zero_dp"
+            android:layout_width="@dimen/small_0"
             android:layout_height="wrap_content"
             android:layout_weight="10"
             android:layout_marginStart="@dimen/base"

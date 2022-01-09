@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -40,6 +41,15 @@ public class Authentication extends AppCompatActivity implements View.OnClickLis
         builder = new AlertDialog.Builder(this);
         builder.setView(R.layout.progress_bar);
         dialog = builder.create();
+
+        Intent i = getIntent();
+
+        if(i.hasExtra("something_went_wrong")) {
+           boolean val = i.getBooleanExtra("something_went_wrong", false);
+           if(val) {
+               Snackbar.make(this.binding.authenticationScreen, "Something went wrong!", Snackbar.LENGTH_LONG).show();
+           }
+        }
 
         this.binding.authenticationScreenLogo.animate().alpha(1).setDuration(1000);
 

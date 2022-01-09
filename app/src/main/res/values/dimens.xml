@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- View -->
+    <!-- View small -->
+    <dimen name="small_0">0dp</dimen>
+    <dimen name="small_1">1dp</dimen>
+    <dimen name="small_2">2dp</dimen>
     <dimen name="base">8dp</dimen>
-    <dimen name="medium_20">20dp</dimen>
-    <dimen name="text_16">16sp</dimen>
-    <dimen name="zero_dp">0dp</dimen>
-    <dimen name="text_24">24sp</dimen>
-    <dimen name="large_50">50dp</dimen>
-    <dimen name="mediumText_28">28sp</dimen>
-    <dimen name="text_20">20sp</dimen>
-    <dimen name="text_12">12sp</dimen>
-    <dimen name="one_dp">1dp</dimen>
-    <dimen name="large_75">75dp</dimen>
-    <dimen name="large_150">150dp</dimen>
-    <dimen name="text_14">14sp</dimen>
-    <dimen name="small_2">2dp</dimen>
     <dimen name="small_10">10dp</dimen>
-    <dimen name="large_100">100dp</dimen>
-    <dimen name="small_2">2dp</dimen>
+
+    <!-- View medium -->
+    <dimen name="medium_20">20dp</dimen>
     <dimen name="medium_30">30dp</dimen>
-    <dimen name="image_24">24dp</dimen>
+
+    <!-- View large -->
     <dimen name="large_40">40dp</dimen>
+    <dimen name="large_50">50dp</dimen>
+    <dimen name="large_75">75dp</dimen>
+    <dimen name="large_100">100dp</dimen>
+    <dimen name="large_150">150dp</dimen>
+
+    <!-- View image-->
+    <dimen name="image_24">24dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+
 </resources>

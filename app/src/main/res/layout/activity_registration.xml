@@ -130,8 +130,7 @@
             tools:ignore="UselessParent">
 
             <TextView
-                android:id="@+id/registration_disclaimer_text"
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="30"
                 android:text="@string/disclaimer"
@@ -139,8 +138,7 @@
                 android:textColor="@color/red" />
 
             <TextView
-                android:id="@+id/registration_disclaimer"
-                android:layout_width="@dimen/zero_dp"
+                android:layout_width="@dimen/small_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="70"
                 android:scrollbars="vertical"

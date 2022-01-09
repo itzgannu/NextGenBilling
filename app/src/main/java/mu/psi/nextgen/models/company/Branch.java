@@ -52,4 +52,13 @@ public class Branch implements Serializable {
 
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Branch{" +
+                "company_name='" + company_name + '\'' +
+                ", branch_name='" + branch_name + '\'' +
+                ", branch_location='" + branch_location + '\'' +
+                '}';
+    }
 }
