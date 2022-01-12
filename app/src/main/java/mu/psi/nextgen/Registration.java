@@ -19,13 +19,12 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import java.util.Objects;
 
 import mu.psi.nextgen.databinding.ActivityRegistrationBinding;
-import mu.psi.nextgen.viewModel.CompanyVM;
 
 public class Registration extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
 
     ActivityRegistrationBinding binding;
 
-    private FirebaseAuth auth; CompanyVM companyVM;
+    private FirebaseAuth auth;
 
     Dialog dialog;
     AlertDialog.Builder builder;
@@ -39,7 +38,6 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
         setContentView(this.binding.getRoot());
 
         auth = FirebaseAuth.getInstance();
-        companyVM = CompanyVM.getInstance(getApplication());
 
         builder = new AlertDialog.Builder(this);
         builder.setView(R.layout.progress_bar);

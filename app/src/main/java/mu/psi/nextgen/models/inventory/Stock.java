@@ -1,6 +1,10 @@
 package mu.psi.nextgen.models.inventory;
 
+import com.google.firebase.firestore.Exclude;
+
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Stock implements Serializable {
     String name, description, pack, pic_url;
@@ -74,6 +78,21 @@ public class Stock implements Serializable {
 
     public void setSoldStock(int soldStock) {
         this.soldStock = soldStock;
+    }
+
+    @Exclude
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+
+        result.put("name", name);
+        result.put("description", description);
+        result.put("pack", pack);
+        result.put("pic_url", pic_url);
+        result.put("price", price);
+        result.put("inStock", inStock);
+        result.put("soldStock", soldStock);
+
+        return result;
     }
 
     @Override

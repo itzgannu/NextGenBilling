@@ -12,6 +12,7 @@
     <string name="home">HOME</string>
     <string name="stocks">STOCKS</string>
     <string name="extras">EXTRAS</string>
+    <string name="order_id">ORDER ID</string>
 
     <!-- Progress Bar XML -->
     <string name="loading">Loading</string>
@@ -31,6 +32,9 @@
 
     <!-- Home Extras Screen -->
     <string name="dashboard">DASHBOARD</string>
+
+    <!-- Dashboard Screen -->
+    <string name="under_maintenance">UNDER MAINTENANCE</string>
 
     <!-- Authentication Screen -->
     <string name="email_id">EMAIL ID</string>
@@ -135,6 +139,10 @@
     <string name="preferenceName">MuPsiBilling</string>
     <string name="userRole">UserRole</string>
 
+    <!-- StockAddition Java -->
+    <string name="sa_dialog_title">ATTENTION</string>
+    <string name="sa_dialog_message">YOU DID NOT SELECT IMAGE, DEFAULT IMAGE WILL BE SET</string>
+
     <!-- Error Messages -->
     <string name="error_field_empty">FIELD IS EMPTY</string>
     <string name="error_password_minimum_six">PASSWORD NEEDS TO BE MINIMUM 6 CHARACTERS</string>
@@ -142,5 +150,6 @@
     <string name="error_name_minimum_two">FULL NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
     <string name="error_company_minimum_two">COMPANY NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
     <string name="error_field_minimum_three">FIELDS NEEDS TO BE MINIMUM 3 CHARACTERS</string>
+    <string name="error_field_minimum_six">FIELD NEEDS TO BE MINIMUM 6 CHARACTERS</string>
 
 </resources>

@@ -2,11 +2,12 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_stores"
+    android:id="@+id/card_branches"
     app:strokeWidth="@dimen/small_1"
     app:strokeColor="@color/dark_green"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/base"
     android:layout_marginBottom="@dimen/medium_20">
 
     <LinearLayout
@@ -17,7 +18,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/card_stores_branch_name"
+            android:id="@+id/card_branches_branch_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/branch_name"
@@ -26,7 +27,7 @@
             android:textSize="@dimen/text_16"/>
 
         <TextView
-            android:id="@+id/card_stores_branch_location"
+            android:id="@+id/card_branches_branch_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/base"

@@ -43,4 +43,12 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/under_maintenance"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_20"/>
+
 </RelativeLayout>
