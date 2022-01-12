@@ -1,4 +1,4 @@
-package mu.psi.nextgen.models.cart;
+package mu.psi.nextgen.models.bills;
 
 import androidx.annotation.NonNull;
 

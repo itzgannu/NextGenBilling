@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_invoices"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/base"
+    android:layout_marginBottom="@dimen/base"
+    app:strokeWidth="@dimen/small_2"
+    app:strokeColor="@color/grass_green">
+
+    <TextView
+        android:id="@+id/card_invoices_order_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base"
+        android:text="@string/order_id"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+</com.google.android.material.card.MaterialCardView>

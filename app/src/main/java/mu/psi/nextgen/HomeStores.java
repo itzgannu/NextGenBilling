@@ -24,6 +24,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 import mu.psi.nextgen.adapter.recycler.Branches;
+import mu.psi.nextgen.assistant.DisplayName;
 import mu.psi.nextgen.assistant.LocalData;
 import mu.psi.nextgen.databinding.ActivityHomeStoresBinding;
 import mu.psi.nextgen.models.company.Branch;
@@ -37,8 +38,11 @@ public class HomeStores extends AppCompatActivity implements NavigationBarView.O
     Context context;
 
     FirebaseAuth auth;
+
     CompanyVM viewModel;
     LocalData data;
+    DisplayName displayName;
+
     String email;
     String company_name;
 
@@ -65,15 +69,9 @@ public class HomeStores extends AppCompatActivity implements NavigationBarView.O
         bottomNavigationView.setOnItemSelectedListener(this);
 
         String name = auth.getCurrentUser().getDisplayName();
-        String [] splitter = new String[0];
-        if (name != null) {
-            splitter = name.split("/");
-        }
-        Log.d("Hero", name);
-        Log.d("Hero", splitter[0]);
-        Log.d("Hero", splitter[1]);
-        Log.d("Hero", splitter[2]);
-        company_name = splitter[0];
+        displayName = new DisplayName(name);
+
+        company_name = displayName.getCompanyName();
 
         this.viewModel = CompanyVM.getInstance(getApplication());
         this.viewModel.readBranches(company_name);

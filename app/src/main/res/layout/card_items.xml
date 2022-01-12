@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_items"
     app:cardElevation="@dimen/small_0"
+    android:layout_marginTop="@dimen/base"
+    android:layout_marginBottom="@dimen/base"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,15 +18,17 @@
         android:layout_gravity="center">
 
         <TextView
+            android:id="@+id/card_items_quantity"
             android:layout_width="@dimen/small_0"
             android:layout_height="wrap_content"
             android:layout_weight="10"
             android:text="@string/one"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_14"
+            android:textSize="@dimen/text_16"
             android:textAlignment="center"/>
 
         <ImageView
+            android:id="@+id/card_items_image"
             android:layout_width="@dimen/large_100"
             android:layout_height="@dimen/large_100"
             android:layout_marginStart="@dimen/base"
@@ -38,6 +44,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/card_items_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/product_name"
@@ -45,6 +52,7 @@
                 android:textSize="@dimen/text_16"/>
 
             <TextView
+                android:id="@+id/card_items_pack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/base"
@@ -55,16 +63,15 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/card_items_price"
             android:layout_width="@dimen/small_0"
             android:layout_height="wrap_content"
             android:layout_weight="10"
             android:layout_marginStart="@dimen/base"
-            android:text="@string/price"
-            android:textSize="@dimen/text_14"
+            android:text="@string/one"
+            android:textSize="@dimen/text_16"
             android:textColor="@color/black"
             android:textAlignment="center"/>
-
-
 
     </LinearLayout>
 

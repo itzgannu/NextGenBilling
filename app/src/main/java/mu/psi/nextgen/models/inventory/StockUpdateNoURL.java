@@ -6,16 +6,16 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StockNoURL implements Serializable {
+public class StockUpdateNoURL implements Serializable {
+
     String name, description, pack;
     double price;
     int inStock;
-    final int soldStock = 0;
 
-    public StockNoURL() {
+    public StockUpdateNoURL() {
     }
 
-    public StockNoURL(String name, String description, String pack, double price, int inStock) {
+    public StockUpdateNoURL(String name, String description, String pack, double price, int inStock) {
         this.name = name;
         this.description = description;
         this.pack = pack;
@@ -72,7 +72,6 @@ public class StockNoURL implements Serializable {
         result.put("pack", pack);
         result.put("price", price);
         result.put("inStock", inStock);
-        result.put("soldStock", soldStock);
 
         return result;
     }

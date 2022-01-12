@@ -43,16 +43,8 @@ public class HomeMore extends AppCompatActivity implements View.OnClickListener,
         }
         role = splitter[1];
 
-        if(role.equalsIgnoreCase("admin")){
-            this.binding.homeMoreAddBranchButton.setVisibility(View.VISIBLE);
-            this.binding.homeMoreAddEmployeeButton.setVisibility(View.VISIBLE);
+        adminCheck();
 
-            this.binding.homeMoreAddEmployeeButton.setOnClickListener(this);
-            this.binding.homeMoreAddBranchButton.setOnClickListener(this);
-        } else {
-            this.binding.homeMoreAddBranchButton.setVisibility(View.GONE);
-            this.binding.homeMoreAddEmployeeButton.setVisibility(View.GONE);
-        }
         this.binding.homeMoreUpdatePasswordButton.setOnClickListener(this);
         this.binding.homeMoreAboutUsButton.setOnClickListener(this);
         this.binding.homeMoreSignOutButton.setOnClickListener(this);
@@ -63,27 +55,60 @@ public class HomeMore extends AppCompatActivity implements View.OnClickListener,
         int id = v.getId();
 
         if(id == R.id.home_more_add_employee_button) {
-            Intent goToStaffAddition = new Intent(HomeMore.this, StaffAddition.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            startActivity(goToStaffAddition);
-            finish();
+            staffAddition();
         } else if(id == R.id.home_more_add_branch_button) {
-            Intent goToBranchAddition = new Intent(HomeMore.this, BranchAddition.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            startActivity(goToBranchAddition);
-            finish();
+            branchAddition();
         } else if(id == R.id.home_more_update_password_button) {
-            Intent goToPasscodeUpdate = new Intent(HomeMore.this, PasscodeUpdation.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            startActivity(goToPasscodeUpdate);
-            finish();
+            updatePasscode();
         } else if(id == R.id.home_more_about_us_button) {
-            Intent goToAboutUs = new Intent(HomeMore.this, AboutUs.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            startActivity(goToAboutUs);
-            finish();
+            aboutUs();
         } else if(id == R.id.home_more_sign_out_button) {
-            auth.signOut();
-            Intent goToAuth = new Intent(HomeMore.this, Authentication.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            startActivity(goToAuth);
-            finish();
+            signOut();
         }
+    }
+
+    private void adminCheck() {
+        if(role.equalsIgnoreCase("admin")){
+            this.binding.homeMoreAddBranchButton.setVisibility(View.VISIBLE);
+            this.binding.homeMoreAddEmployeeButton.setVisibility(View.VISIBLE);
+
+            this.binding.homeMoreAddEmployeeButton.setOnClickListener(this);
+            this.binding.homeMoreAddBranchButton.setOnClickListener(this);
+        } else {
+            this.binding.homeMoreAddBranchButton.setVisibility(View.GONE);
+            this.binding.homeMoreAddEmployeeButton.setVisibility(View.GONE);
+        }
+    }
+
+    private void staffAddition() {
+        Intent goToStaffAddition = new Intent(HomeMore.this, StaffAddition.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(goToStaffAddition);
+        finish();
+    }
+
+    private void branchAddition() {
+        Intent goToBranchAddition = new Intent(HomeMore.this, BranchAddition.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(goToBranchAddition);
+        finish();
+    }
+
+    private void updatePasscode() {
+        Intent goToPasscodeUpdate = new Intent(HomeMore.this, PasscodeUpdation.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(goToPasscodeUpdate);
+        finish();
+    }
+
+    private void aboutUs() {
+        Intent goToAboutUs = new Intent(HomeMore.this, AboutUs.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(goToAboutUs);
+        finish();
+    }
+
+    private void signOut() {
+        auth.signOut();
+        Intent goToAuth = new Intent(HomeMore.this, Authentication.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(goToAuth);
+        finish();
     }
 
     @Override

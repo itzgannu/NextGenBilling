@@ -31,7 +31,7 @@ public class Branches extends RecyclerView.Adapter<Branches.MyViewHolder>{
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_stores,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_branches,parent,false);
         return new MyViewHolder(view);
     }
 
@@ -64,9 +64,9 @@ public class Branches extends RecyclerView.Adapter<Branches.MyViewHolder>{
         TextView branchNameTV, branchLocationTV;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            cardView = itemView.findViewById(R.id.card_stores);
-            branchNameTV = itemView.findViewById(R.id.card_stores_branch_name);
-            branchLocationTV = itemView.findViewById(R.id.card_stores_branch_location);
+            cardView = itemView.findViewById(R.id.card_branches);
+            branchNameTV = itemView.findViewById(R.id.card_branches_branch_name);
+            branchLocationTV = itemView.findViewById(R.id.card_branches_branch_location);
         }
 
         public void assignValues(String branch_name, String branch_location) {
