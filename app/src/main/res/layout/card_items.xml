@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_items"
     app:cardElevation="@dimen/small_0"
-    android:layout_marginTop="@dimen/base"
     android:layout_marginBottom="@dimen/base"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -29,10 +28,10 @@
 
         <ImageView
             android:id="@+id/card_items_image"
-            android:layout_width="@dimen/large_100"
-            android:layout_height="@dimen/large_100"
+            android:layout_width="@dimen/large_58"
+            android:layout_height="@dimen/large_58"
             android:layout_marginStart="@dimen/base"
-            android:padding="@dimen/base"
+            android:padding="@dimen/small_2"
             android:src="@drawable/basket"
             android:contentDescription="@string/image_content_description"/>
 
@@ -45,7 +44,7 @@
 
             <TextView
                 android:id="@+id/card_items_name"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/product_name"
                 android:textColor="@color/black"
@@ -53,7 +52,7 @@
 
             <TextView
                 android:id="@+id/card_items_pack"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/base"
                 android:text="@string/pack"
@@ -66,7 +65,7 @@
             android:id="@+id/card_items_price"
             android:layout_width="@dimen/small_0"
             android:layout_height="wrap_content"
-            android:layout_weight="10"
+            android:layout_weight="20"
             android:layout_marginStart="@dimen/base"
             android:text="@string/one"
             android:textSize="@dimen/text_16"

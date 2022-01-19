@@ -151,5 +151,6 @@
     <string name="error_company_minimum_two">COMPANY NAME NEEDS TO BE MINIMUM 2 CHARACTERS</string>
     <string name="error_field_minimum_three">FIELDS NEEDS TO BE MINIMUM 3 CHARACTERS</string>
     <string name="error_field_minimum_six">FIELD NEEDS TO BE MINIMUM 6 CHARACTERS</string>
+    <string name="go_to_checkout">GO TO CHECKOUT</string>
 
 </resources>

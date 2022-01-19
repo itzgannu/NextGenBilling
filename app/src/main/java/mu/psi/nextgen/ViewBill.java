@@ -13,7 +13,7 @@ import java.util.List;
 import mu.psi.nextgen.adapter.recycler.Items;
 import mu.psi.nextgen.databinding.ActivityViewBillBinding;
 import mu.psi.nextgen.models.bills.Invoice;
-import mu.psi.nextgen.models.bills.Item;
+import mu.psi.nextgen.models.cart.Item;
 
 public class ViewBill extends AppCompatActivity {
 
