@@ -82,13 +82,7 @@ public class HomeStocks extends AppCompatActivity implements NavigationBarView.O
         this.binding.homeStocksAdd.setOnClickListener(this);
     }
 
-    public void startRecycler(List<Stock> stocks) {
-        //stocks = removeDuplicated(stocks);
-//        if (stocks.size() > 0) {
-//            this.binding.homeNoStores.setVisibility(View.GONE);
-//        } else {
-//            this.binding.homeNoStores.setVisibility(View.VISIBLE);
-//        }
+    private void startRecycler(List<Stock> stocks) {
         this.recyclerView = this.binding.homeStocksRecyclerView;
         gridLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(gridLayoutManager);

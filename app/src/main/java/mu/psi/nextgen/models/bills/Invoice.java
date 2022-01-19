@@ -1,8 +1,13 @@
 package mu.psi.nextgen.models.bills;
 
+import com.google.firebase.firestore.Exclude;
+
 import java.io.Serializable;
-import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import mu.psi.nextgen.models.cart.Item;
 
 public class Invoice  implements Serializable {
 
@@ -10,17 +15,31 @@ public class Invoice  implements Serializable {
     String customer_email;
     String company_name;
     String order_number;
-
-    Date order_date_time;
+    String order_date_time;
 
     double order_total;
 
     List<Item> itemList;
 
+    @Exclude
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+
+        result.put("customer_name", customer_name);
+        result.put("customer_email", customer_email);
+        result.put("company_name", company_name);
+        result.put("order_number", order_number);
+        result.put("order_date_time", order_date_time);
+        result.put("order_total", order_total);
+        result.put("itemList", itemList);
+
+        return result;
+    }
+
     public Invoice() {
     }
 
-    public Invoice(String customer_name, String customer_email, String company_name, String order_number, Date order_date_time, double order_total, List<Item> itemList) {
+    public Invoice(String customer_name, String customer_email, String company_name, String order_number, String order_date_time, double order_total, List<Item> itemList) {
         this.customer_name = customer_name;
         this.customer_email = customer_email;
         this.company_name = company_name;
@@ -62,11 +81,11 @@ public class Invoice  implements Serializable {
         this.company_name = company_name;
     }
 
-    public Date getOrder_date_time() {
+    public String getOrder_date_time() {
         return order_date_time;
     }
 
-    public void setOrder_date_time(Date order_date_time) {
+    public void setOrder_date_time(String order_date_time) {
         this.order_date_time = order_date_time;
     }
 

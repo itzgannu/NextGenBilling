@@ -58,6 +58,7 @@
         android:padding="@dimen/medium_20">
 
         <ImageView
+            android:id="@+id/order_product_pic"
             android:layout_width="@dimen/large_150"
             android:layout_height="@dimen/large_150"
             android:layout_marginTop="@dimen/large_50"
@@ -84,6 +85,7 @@
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/order_product_price"
                 android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
@@ -107,6 +109,7 @@
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/order_product_pack"
                 android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
@@ -130,6 +133,7 @@
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/order_product_description"
                 android:layout_width="@dimen/small_0"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
@@ -152,15 +156,17 @@
         android:gravity="center_horizontal">
 
         <LinearLayout
+            android:id="@+id/order_product_stepper"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="60"
-            android:clickable="false"
+            android:enabled="false"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:visibility="invisible">
 
             <ImageView
+                android:id="@+id/order_product_minus"
                 android:layout_width="@dimen/large_50"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/base"
@@ -168,6 +174,7 @@
                 app:srcCompat="@drawable/icon_subtraction" />
 
             <TextView
+                android:id="@+id/order_product_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/base"
@@ -178,6 +185,7 @@
                 android:textSize="@dimen/text_20" />
 
             <ImageView
+                android:id="@+id/order_product_add"
                 android:layout_width="@dimen/large_50"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/base"
@@ -187,6 +195,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/order_product_add_to_cart_button"
             android:layout_weight="40"
             android:layout_width="@dimen/medium_20"
             android:layout_height="match_parent"

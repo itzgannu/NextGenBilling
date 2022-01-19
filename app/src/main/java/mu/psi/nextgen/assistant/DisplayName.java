@@ -28,4 +28,10 @@ public class DisplayName {
     public String getEmployeeName() {
         return employee_name;
     }
+
+    public String getDisplayName() {
+        String newDisplayName = display_name;
+        newDisplayName = newDisplayName.replace("/", "-");
+        return newDisplayName;
+    }
 }

@@ -40,6 +40,16 @@
                 android:textSize="@dimen/text_16"
                 android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/order_aisle_cart"
+                android:layout_width="@dimen/large_50"
+                android:layout_height="match_parent"
+                android:padding="@dimen/base"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/medium_20"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/icon_cart" />
+
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>

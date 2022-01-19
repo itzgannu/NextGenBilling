@@ -16,7 +16,7 @@ import com.google.android.material.card.MaterialCardView;
 import java.util.List;
 
 import mu.psi.nextgen.R;
-import mu.psi.nextgen.models.bills.Item;
+import mu.psi.nextgen.models.cart.Item;
 
 public class Items extends RecyclerView.Adapter<Items.MyViewHolder> {
 
@@ -43,7 +43,7 @@ public class Items extends RecyclerView.Adapter<Items.MyViewHolder> {
         url = itemList.get(position).getPic_url();
         name = itemList.get(position).getName();
         pack = itemList.get(position).getPack();
-        price = String.valueOf(itemList.get(position).getPrice());
+        price = String.valueOf(itemList.get(position).getTotal());
 
         holder.assignValues(quantity, url, name, pack, price);
     }

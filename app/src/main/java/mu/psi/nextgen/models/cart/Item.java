@@ -1,8 +1,12 @@
-package mu.psi.nextgen.models.bills;
+package mu.psi.nextgen.models.cart;
 
 import androidx.annotation.NonNull;
 
+import com.google.firebase.firestore.Exclude;
+
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Item implements Serializable {
     String name, pack, pic_url;
@@ -69,16 +73,17 @@ public class Item implements Serializable {
         this.quantity = quantity;
     }
 
-    @NonNull
-    @Override
-    public String toString() {
-        return "Item{" +
-                "name='" + name + '\'' +
-                ", pack='" + pack + '\'' +
-                ", pic_url='" + pic_url + '\'' +
-                ", price=" + price +
-                ", total=" + total +
-                ", quantity=" + quantity +
-                '}';
+    @Exclude
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+
+        result.put("name", name);
+        result.put("pack", pack);
+        result.put("pic_url", pic_url);
+        result.put("price", price);
+        result.put("total", total);
+        result.put("quantity", quantity);
+
+        return result;
     }
 }

@@ -22,7 +22,7 @@
             android:layout_height="?attr/actionBarSize">
 
             <ImageView
-                android:id="@+id/order_review_close"
+                android:id="@+id/order_review_back"
                 android:layout_width="@dimen/large_50"
                 android:layout_height="match_parent"
                 android:padding="@dimen/base"
@@ -49,9 +49,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="false"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentBottom="false"
         android:padding="@dimen/medium_20"
         android:layout_below="@id/order_review_toolBarLayout"
+        android:layout_above="@+id/order_review_go_to_checkout_button"
         android:orientation="vertical">
 
         <TextView
@@ -59,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="textEnd"
-            android:text="@string/total"
+            android:textSize="@dimen/text_14"
             android:padding="@dimen/base"
             android:textColor="@color/black"/>
 
@@ -67,8 +68,19 @@
             android:id="@+id/order_review_recycler"
             android:layout_marginTop="@dimen/base"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"/>
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/order_review_go_to_checkout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_20"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:text="@string/go_to_checkout"/>
 
 </RelativeLayout>

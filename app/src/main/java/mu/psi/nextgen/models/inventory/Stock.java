@@ -6,6 +6,8 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+import mu.psi.nextgen.models.cart.Item;
+
 public class Stock implements Serializable {
     String name, description, pack, pic_url;
     double price;
@@ -95,16 +97,7 @@ public class Stock implements Serializable {
         return result;
     }
 
-    @Override
-    public String toString() {
-        return "Stock{" +
-                "name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", pack='" + pack + '\'' +
-                ", pic_url='" + pic_url + '\'' +
-                ", price=" + price +
-                ", inStock=" + inStock +
-                ", soldStock=" + soldStock +
-                '}';
+    public Item toItem() {
+        return new Item(name, pack, pic_url, price, 0, 0);
     }
 }

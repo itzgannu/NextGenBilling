@@ -51,7 +51,6 @@ public class Invoices extends RecyclerView.Adapter<Invoices.MyViewHolder> {
                 context.startActivity(goToBills);
             }
         });
-
     }
 
     @Override
